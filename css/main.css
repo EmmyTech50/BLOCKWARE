@@ -15,17 +15,18 @@
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    zoom: 0.85;
+    zoom: 0.85; 
+    animation: bgcolChanger 2s linear 1s infinite;
 }
 
 /* header for the navigation */
 header{
-    height: 97px;
+    height: 70px;
     background-color: var(--primary-color);
 }
 
 header nav{
-    height: 97px;
+    height: 70px;
     margin: auto var(--default-margin);
     display: flex;
     justify-content: space-between;
@@ -113,6 +114,14 @@ header nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+   animation: tofro 0.9s linear 2s infinite forwards;
+   /* animation-name: tofro;
+   animation-duration: 4s;
+   animation-timiming-function: linear;
+   animation-iteration-count: infinite;
+   animation-delay: 2s;
+   animation-direction: reverse; */
 }
 
 .inner__partners{
@@ -156,7 +165,7 @@ header nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: var(--default-margin);
+     margin-bottom: var(--default-margin);
 }
 
 .item .__num{
@@ -173,7 +182,7 @@ header nav{
 }
 
 /* what we offer */
-.inner_offers, .inner_job_listing{
+.inner_offers, .inner_job_listing, .contact{
     margin: var(--default-margin);
 }
 
@@ -312,6 +321,12 @@ a.tabs.active{
     background-color: #ffd25f99;
 }
 
+.item_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 .item_footer a{
     text-decoration: none;
@@ -376,4 +391,91 @@ a.apply{
 section.last{
     height: 100px;
     background-color: #fff;
+}
+
+
+/* SIGN UP */
+
+.body-main{
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_container{
+    height: 450px;
+    width: 450px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+    top: 100px;
+}
+
+form.signup{
+    padding: 15px;
+    width: 85%;
+    zoom: 0.9;
+}
+
+.btn-row{
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+input, select{
+    padding: 10px;
+    height: 40px;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+}
+
+form span, .form_container p{
+    font-size: 13px;
+}
+
+
+/* Creating the animation */
+
+
+@keyframes tofro {
+    from{
+        top:10px
+    }
+    to{
+        top: -20px;
+    }
+}
+
+.rotating-image{
+    animation: moveRound 4s linear 1s infinite forwards;
+}
+
+@keyframes moveRound {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+@keyframes bgcolChanger{
+    0%  {background-color: rgb(240, 158, 158);}
+    25%  {background-color: rgb(171,231,92);}
+    50%  {background-color: rgb(68, 125, 237);}
+    100% {background-color: rgb(19, 186, 94);}
 }
