@@ -13,5 +13,14 @@ cross: <i class="fa fa-crosshairs" aria-hidden="true"></i>
 Search: <i class="fa fa-search" aria-hidden="true"></i>
 
 
+windows: <i class="bi bi-border-all"></i>
+check: <i class="bi bi-check-lg"></i>
+save jobs: <i class="bi bi-floppy"></i>
+post a job: <i class="bi bi-pencil-square"></i>
+u letter: <i class="fa fa-magnet" aria-hidden="true"></i>
+flag: <i class="fi fi-tr-flag-alt"></i>
+
+
+
 
  
