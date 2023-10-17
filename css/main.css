@@ -763,6 +763,11 @@ form span, .form_container p{
         margin-top: 10px;
     }
 
+    .footer__content{
+        width: 50%;
+
+    }
+
     /* services */
 
     .content_1{
