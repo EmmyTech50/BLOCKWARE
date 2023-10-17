@@ -542,6 +542,7 @@ section.services span p{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-justify: auto;
     margin: var(--default-margin);
     padding: auto var(--default-margin);
 }
@@ -742,7 +743,30 @@ form span, .form_container p{
         width: 100%;
     }
     .inner__aboutus .left h2{
-        font-size: 34xp;
+        font-size: 34px;
+    }
+    
+    .job_listing_header{
+        flex-direction: column;
+    }
+
+    .btn{
+        padding: 5px;
+    }
+
+    .job_row{
+        flex-direction: column;
+    }
+
+    .row_item{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* services */
+
+    .content_1{
+        flex-direction: column;
     }
 
 }
